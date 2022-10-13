@@ -1,11 +1,13 @@
 const db= require('../db/db')
 const express = require('express')
 const router= express.Router()
+const controller = require('../controllers/controller')
 
-router.get('/', getAllSuperheroes)
+router.get('/superheroes', controller.getAllSuperheroes)
+router.post('/superheroes', controller.getAllSuperheroes)
+router.put('/superheroes/:id', controller.getAllSuperheroes)
+router.delete('/superheroes/:id', controller.getAllSuperheroes)
 
-function getAllSuperheroes (req,res) {
-    res.status(200).json({message: 'It`s all right!'})
-}
+
 
 module.exports =router
