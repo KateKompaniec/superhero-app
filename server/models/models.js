@@ -13,6 +13,14 @@ const Superhero = sequelize.define('superhero',{
 
 })
 
+/* const Image =sequelize.define('image',{
+    id: {type: DataTypes.INTEGER, primaryKey:true, autoIncrement:true},
+    name: {type: DataTypes.STRING},
+    img: {type: DataTypes.STRING}
+})
+
+Superhero.hasMany(Image)
+Image.belongsTo(Superhero) */
 /* const Universe = sequelize.define('universe',{
     id: {type: DataTypes.INTEGER, primaryKey:true, autoIncrement:true},
     title: {type: DataTypes.STRING}
@@ -21,4 +29,4 @@ const Superhero = sequelize.define('superhero',{
 Universe.hasMany(Superhero)
 Superhero.belongsTo(Universe)
  */
-module.exports ={Superhero}
+module.exports = Superhero
