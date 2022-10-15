@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <div>
-      Header
-    </div>
+    <header>
+       <h1>The<strong>Superheroes</strong>Database</h1>
+    </header>
   )
 }
